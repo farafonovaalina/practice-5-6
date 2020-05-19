@@ -1,0 +1,163 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title> 3 Column Layout </title>
+    <link href="assets/css/layout.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/decorator.css" rel="stylesheet">
+</head>
+<body>
+<header class="header wrapper">
+    <p>Header ...</p>
+    <img alt="" src="assets/img/logo.png">
+</header>
+<div class="container">
+    <main class="center column">
+        <article>
+            <form action="" class="formUserDetails" id="userDetails">
+                <h2>User details</h2>
+                <div class="group">
+                    <input id="fullName" placeholder="Homero Simpson" required type="text"/>
+                    <label for="fullName">Full name<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input id="birthday" required type="date">
+                    <label for="birthday">Your birthday<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <select id="gender" required>
+                        <option disabled selected value="-"></option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <label for="gender">Gender</label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group__countryAndPhone">
+                    <div class="group country">
+                        <select id="countries" required>
+                            <option disabled selected value=""></option>
+                            <optgroup label="Europe">
+                                <option value="+380">Ukraine</option>
+                                <option value="+44">Germany</option>
+                                <option value="+3752">Estonia</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="+1">Canada</option>
+                                <option value="+504">Honduras</option>
+                                <option value="+1">USA</option>
+                            </optgroup>
+                        </select>
+                        <label for="countries">Country</label>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="group phone">
+                        <input id="phone" required type="text">
+                        <label for="phone">Phone<sup>&#9913</sup></label>
+                        <span class="bar"></span>
+
+                        <div class="help_phone">
+                            <span>Mobile: 098 388 737</span>
+                            <span>Fixed: 2123 1234</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <textarea class="textarea" id="bio" name="bioTextArea"
+                              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ..."></textarea>
+                    <label for="bio">Bio</label>
+                    <span class="bar"></span>
+
+                    <div class="help_bio">
+                        <span>Tell us about yourself</span>
+                        <span class="counter">0/1500</span>
+                    </div>
+                </div>
+
+                <button class="btn" type="submit">
+                    <span>Submit</span>
+                </button>
+
+            </form>
+
+            <form action="" id="accountDetails">
+                <h2>Accounts details</h2>
+                <div class="group">
+                    <input id="username" required type="text">
+                    <label for="username">Username<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input id="email" required type="email">
+                    <label for="email">Email<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input id="password" required type="password">
+                    <label for="password">Password<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group">
+                    <input id="confirmPassword" required type="password">
+                    <label for="confirmPassword">Confirm password<sup>&#9913</sup></label>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="group checkbox__group">
+                    <input class="checkbox__input" id="checkbox" required type="checkbox">
+                    <label class="checkbox__label" for="checkbox"></label>
+                    <label class="checkbox__label" for="checkbox">I accept terms and conditions</label>
+                </div>
+
+                <button class="btn" type="submit">
+                    <span>Submit</span>
+                </button>
+            </form>
+        </article>
+    </main>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+
+    <nav class="left column">
+        <h3>Left heading</h3>
+        <ul class="ul">
+            <li class="li"><a href="about.html">About</a></li>
+            <li class="li"><a href="contact.html">Contact</a></li>
+            <li class="li"><a href="media.html">Media</a></li>
+            <li class="li"><a href="slider.html">Slider</a></li>
+            <li class="li"><a href="table.html">Table</a></li>
+            <li class="li"><a href="paint.html">Paint</a></li>
+        </ul>
+
+        <h3>Left Heading</h3>
+        <ul class="ul">
+            <li class="li"><a href="#">Link 1</a></li>
+            <li class="li"><a href="#">Link 2</a></li>
+            <li class="li"><a href="#">Link 3</a></li>
+            <li class="li"><a href="#">Link 4</a></li>
+            <li class="li"><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="footer wrapper">
+    <footer class="footer">
+        <img alt="" src="assets/img/logo.png">
+        <p> Footer... </p>
+    </footer>
+</div>
+<script src="assets/js/textarea.js" type="text/javascript"></script>
+</body>
+</html>
